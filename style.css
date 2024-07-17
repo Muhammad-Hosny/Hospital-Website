@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: darkgrey;
+}
+
+.main, .info {
+    padding: 110px 20px;
+    font-size: 24px;
+    background-color: rgb(219, 212, 212);
+    color: #006600;
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+}
+
+header{
+    background-color: rgb(248, 230, 230);
+    padding: 10px 200px;
+    z-index: 999;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    padding: 20px 200px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 35%);
+}
+
+.logo{
+    font-size: 28px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #219c08;
+}
+a{
+    padding: 5px;
+    color: #219c08;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover{
+    color: cadetblue;
+    transition: 0.5s ease;
+}
+
+.reservation{
+    background-color: #219c08;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+.form{
+    padding: 100px 20px;
+    font-size: 24px;
+    background-color: rgb(219, 212, 212);
+    color: #006600;
+    font-size: 24px;
+}
+input{
+    padding: 20px 50px;
+    padding-left: 8px;
+    margin: 20px;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+}
+
+.submit{
+    background-color: #006600;
+    border: none;
+    border-radius: 12px;
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.formheading{
+    text-align: center;
+    background-color: rgb(191, 241, 141);
+}
+
+.homeh{
+    background-color: rgb(191, 241, 141);
+    width: fit-content;
+    align-items: center;
+    margin: auto;
+}
+
+textarea{
+    resize: none;
+    font-size: 18px;
+}
+
+.comment{
+    padding: 10px 5px;
+}
+.data{
+    display: inline-block;
+    color: black;
+    padding: 0 10px;
+    margin-bottom: 80px;
+    border: solid #f1fff1 15px;
+    border-radius: 20px;
+    background-color: #cccbcb;
+}
+
+.names{
+    justify-content: space-between;
+}
+
+select{
+    order: none;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 12px;
+}
+
+option{
+    border: none;
+    padding: 50px 20px;
+    border-radius: 12px;
+    color:#219c08;
+}
+
+
+.news ,.events {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    flex-direction: column;
+    width: 100%;
+    height: 58vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #219c08; 
+    border-radius: 10px;
+}
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 400px;
+    height: 400px;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(1, 1, 1, 15%);
+    text-align: center;
+    margin: 10px;
+}
+
+.card:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 30px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.atitle {
+    text-align: left;
+    margin: 5px;
+}
+
+.acontent {
+    text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 5px;
+    padding-left: 20px;
+}
+
+.q{
+    font-weight: bold;
+}
+
+.htttitle {
+    margin: 5px;
+}
+
+.theul {
+    padding-left: 50px;
+    font-size: 16px;
+    list-style-type: square;
+}
+
+.beatsummerp {
+    padding-left: 30px;
+}
+
+.staytuned {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #219c08;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(248, 230, 230);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.dropdown-content a {
+    color: cadetblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #817c7c;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: cadetblue;
+}
+
+.about {
+    padding: 110px 20px;
+    font-size: 24px;
+    background-color: rgb(219, 212, 212);
+    color: #006600;
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.aboutul {
+    padding-left: 50px;
+    list-style-type: disc;
+}
+
+.brief {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.stafftitle{
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+}
+.commitment, .commitmentitle {
+    margin: 10px;
+}
+
+.commitmentitle p {
+    font-size: 28px;
+}
+
+.contact {
+    padding: 110px 20px;
+    font-size: 24px;
+    background-color: rgb(219, 212, 212);
+    color: #006600;
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.contact h1{
+    text-align: center;
+}
+
+.contact-info {
+    margin: 10px;
+}
+
+.contact-frame {
+    margin: 10px;
+}
+
+.key-persons {
+    margin: 10px;
+}
+
+.map {
+    margin: 10px;
+}
+
+button {
+    background-color: #006600;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+}

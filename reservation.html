@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reservation</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">HOSPITAL</a>
+        <nav>
+            <a href="index.html">
+                Home
+            </a>
+            <div class="dropdown">
+                <button class="dropbtn">What's New</button>
+                <div class="dropdown-content">
+                <a href="news.html#news">News</a>
+                <a href="news.html#events">Events</a>
+                <a href="news.html#announcements">Announcements</a>
+                <a href="news.html#faqs">FAQs</a>
+                </div>
+            </div>
+            <a href="about.html">
+                About Us
+            </a>
+            <a href="reservation.html" class="reservation">
+                Reservation
+            </a>
+            <a href="contact.html">
+                Contact Us
+            </a>
+        </nav>
+    </header>
+    
+    <div class="form">
+        <h1 class="formheading">Reservation</h1>
+        <form class="form">
+            <div class="data">
+                <div class="names"> 
+                    <label for="first_name" name="first_name">
+                        First Name: 
+                    </label>
+                    <input type="text" name="name" id="name" pattern="[A-Z]{1}[a-z]{2-20}" required>
+
+                    <label for="last_name" name="last_name">
+                        Last Name: 
+                    </label>
+                    <input type="text" name="name" id="name" pattern="[A-Z]{1}[a-z]{2-20}" required>
+                </div>
+
+                <label for="email" name="email">
+                    Email: 
+                </label>
+                <input type="email" name="email" id="email" required>
+
+                <br>
+
+                <label for="mobile" name="mobile">
+                    Mobile Number: 
+                </label>
+                <input type="number" name="mobile" id="mobile" placeholder="+20" pattern="[0-9]{13}">
+
+                <br><br>
+            </div>
+            <br>
+
+            <h2>
+                What's the problem? 
+            </h2>
+            <br>
+            <h3>Infectious Diseases:</h3>
+            <br>
+
+            <div class="checkbox_container">
+                <input type="checkbox" name="ind">
+                <label>
+                    Common Cold
+                </label>
+                <br>
+                <input type="checkbox"name="ind">
+                <label>
+                    Influenza (Flu)
+                </label>
+                <br>
+                <input type="checkbox" name="ind">
+                <label>
+                    Pneumonia
+                </label>
+                <br>
+                <input type="checkbox" name="ind">
+                <label>
+                    Strep Throat
+                </label>
+                <br>
+                <input type="checkbox" name="ind">
+                <label>
+                    Ear Infection
+                </label>
+                <br>
+                <input type="checkbox" name="ind">
+                <label>
+                    Urinary Tract Infection (UTI)
+                </label>
+                <br>
+                <input type="checkbox" name="ind">
+                <label>
+                    Mononucleosis (Mono)
+                </label>
+                <br>
+                <input type="checkbox" name="ind">
+                <label>
+                    Chickenpox
+                </label>
+                <br>
+                <input type="checkbox" name="ind">
+                <label>
+                    Shingles
+                </label>
+                <br>
+                <input type="checkbox" name="ind">
+                <label>
+                    Human Papillomavirus (HPV)
+                </label>
+                <br>
+                <input type="checkbox" name="ind">
+                <label>
+                    HIV/AIDS
+                </label>
+            </div>
+            <br>
+            <h3>Chronic Diseases:</h3>
+            <br>
+            <div class="checkbox_container">
+                <input type="checkbox" name="chd">
+                <label>
+                    Heart Disease
+                </label>
+                <br>
+                <input type="checkbox" name="chd">
+                <label>
+                    Stroke
+                </label>
+                <br>
+                <input type="checkbox" name="chd">
+                <label>
+                    Cancer
+                </label>
+                <br>
+                <input type="checkbox" name="chd">
+                <label>
+                    Diabetes
+                </label>
+                <br>
+                <input type="checkbox" name="chd">
+                <label>
+                    Arthritis
+                </label>
+                <br>
+                <input type="checkbox" name="chd">
+                <label>
+                    Arthritis
+                </label>
+                <br>
+                <input type="checkbox" name="chd">
+                <label>
+                    Chronic Obstructive Pulmonary Disease (COPD)
+                </label>
+                <br>
+                <input type="checkbox" name="chd">
+                <label>
+                    Kidney Disease
+                </label>
+                <br>
+                <input type="checkbox" name="chd">
+                <label>
+                    Liver Disease
+                </label>
+                <br>
+                <input type="checkbox" name="chd">
+                <label>
+                    High Blood Pressure
+                </label>
+                <br>
+                <input type="checkbox" name="chd">
+                <label>
+                    Obesity
+                </label>
+                <br>
+            </div>
+            <br>
+            <h3>Mental Health Conditions:</h3>
+            <br>
+            <div class="checkbox_container">
+                <input type="checkbox" name="mhc">
+                <label>
+                    Anxiety
+                </label>
+                <br>
+                <input type="checkbox" name="mhc">
+                <label>
+                    Depression
+                </label>
+                <br>
+                <input type="checkbox" name="mhc">
+                <label>
+                    Bipolar Disorde
+                </label>
+                <br>
+                <input type="checkbox"  name="mhc">
+                <label>
+                    Schizophrenia
+                </label>
+                <br>
+                <input type="checkbox"  name="mhc">
+                <label>
+                    Eating Disorders
+                </label>
+                <br>
+                <input type="checkbox"  name="mhc">
+                <label>
+                    Post-traumatic Stress Disorder (PTSD)
+                </label>
+                <br>
+                <input type="checkbox"  name="mhc">
+                <label>
+                    Obsessive-Compulsive Disorder (OCD)
+                </label>
+                <br>
+                <input type="checkbox"  name="mhc">
+                <label>
+                    Attention Deficit Hyperactivity Disorder (ADHD)
+                </label>
+                <br>
+            </div>
+            <br>
+            <h3>Neurological Conditions:</h3>
+            <br>
+            <div class="checkbox_container">
+                <input type="checkbox" name="nc">
+                <label>
+                    Alzheimer's Disease
+                </label>
+                <br>
+                <input type="checkbox" name="nc">
+                <label>
+                    Parkinson's Disease
+                </label>
+                <br>
+                <input type="checkbox"  name="nc">
+                <label>
+                    Epilepsy
+                </label>
+                <br>
+                <input type="checkbox"  name="nc">
+                <label>
+                    Multiple Sclerosis (MS)
+                </label>
+                <br>
+                <input type="checkbox"  name="nc">
+                <label>
+                    Migraine                
+                </label>
+                <br>
+                <input type="checkbox"  name="nc">
+                <label>
+                    Meningitis
+                </label>
+                <br>
+            </div>
+            <br>
+            <h3>Resiatory Conditions:</h3>
+            <br>
+            <div class="checkbox_container">
+                <input type="checkbox" name="rc">
+                <label>
+                    Chronic obstructive pulmonary disease (COPD)
+                </label>
+                <br>
+                <input type="checkbox" name="rc">
+                <label>
+                    Asthma
+                </label>
+                <br>
+                <input type="checkbox" name="rc">
+                <label>
+                    Pneumonia
+                </label>
+                <br>
+                <input type="checkbox" name="rc">
+                <label>
+                    Tuberculosis (TB)
+                </label>
+                <br>
+                <input type="checkbox" name="rc">
+                <label>
+                    Lung Cancer
+                </label>
+                <br>
+            </div>
+            <br>
+            <h3>Digestive Conditions:</h3>
+            <br>
+            <div class="checkbox_container">
+                <input type="checkbox">
+                <label>
+                    Irritable Bowel Syndrome (IBS)
+                </label>
+                <br>
+                <input type="checkbox"  name="dc">
+                <label>
+                    Ulcerative Colitis
+                </label>
+                <br>
+                <input type="checkbox" name="dc">
+                <label>
+                    Gastroesophageal Reflux Disease (GERD or heartburn)
+                </label>
+                <br>
+                <input type="checkbox" name="dc">
+                <label>
+                    Appendicitis
+                </label>
+                <br>
+                <input type="checkbox" name="dc">
+                <label>
+                    Hemorrhoids
+                </label>
+                <br>
+            </div>
+            <br>
+            <h3>
+                Skin Conditions:
+            </h3>
+            <br>
+            <div class="checkbox_container">
+                <input type="checkbox" name="sc">
+                <label>
+                    Acne
+                </label>
+                <br>
+                <input type="checkbox"name="sc">
+                <label>
+                    Eczema
+                </label>
+                <br>
+                <input type="checkbox"name="sc">
+                <label>
+                    Psoriasis
+                </label>
+                <br>
+                <input type="checkbox"name="sc">
+                <label>
+                    Melanoma
+                </label>
+                <br>
+                <input type="checkbox"name="sc">
+                <label>
+                    Skin Cancer
+                </label>
+                <br>
+            </div>
+            <br>
+            <h3>Muscloskeletal Conditions:</h3>
+            <br>
+            <div class="checkbox_container">
+                <input type="checkbox" name="mc">
+                <label>
+                    Arthritis
+                </label>
+                <br>
+                <input type="checkbox" name="mc">
+                <label>
+                    Back Pain
+                </label>
+                <br>
+                <input type="checkbox" name="mc">
+                <label>
+                    Neck Pain
+                </label>
+                <br>
+                <input type="checkbox" name="mc">
+                <label>
+                    Fibromyalgia
+                </label>
+                <br>
+                <input type="checkbox" name="mc">
+                <label>
+                    Lupus
+                </label>
+                <br>
+            </div>
+            <br>
+            <h3>Other:</h3>
+            <br>
+            <div class="checkbox_container">
+                <input type="checkbox" name="other">
+                <label>
+                    Allergies
+                </label>
+                <br>
+                <input type="checkbox" name="other">
+                <label>
+                    Sleep Disorders
+                </label>
+                <br>
+                <input type="checkbox" name="other">
+                <label>
+                    Autoimmune Diseases
+                </label>
+                <br>
+                <input type="checkbox" name="other">
+                <label>
+                    Hormonal Disorders
+                </label>
+                <br>
+            </div>
+            <br>
+            <div class="ccd" id="departments">
+                <h3>Core Clincal Departments:</h3>
+                <br>
+                <input type="radio" name="ccd">
+                <label>
+                    Emergency Department (ED)
+                </label>
+                <br>
+                <input type="radio" name="ccd">
+                <label>
+                    Cardiology
+                </label>
+                <br>
+                <input type="radio" name="ccd">
+                <label>
+                    Pulmonology
+                </label>
+                <br>
+                <input type="radio" name="ccd">
+                <label>
+                    Gastroenterology
+                </label>
+                <br>
+                <input type="radio" name="ccd">
+                <label>
+                    Dermatology
+                </label>
+                <br>
+                <input type="radio" name="ccd">
+                <label>
+                    Neurology
+                </label>
+                <br>
+                <input type="radio" name="ccd">
+                <label>
+                    Orthopedics
+                </label>
+                <br>
+                <input type="radio" name="ccd">
+                <label>
+                    Urology
+                </label>
+            </div>
+            <br>
+            <div class="sd" id="departments">
+                <h3>Supporting Departments:</h3>
+                <input type="radio" name="sd">
+                <label>
+                    Infectious Disease
+                </label>
+                <br>
+                <input type="radio" name="sd">
+                <label>
+                    Oncology
+                </label>
+                <br>
+                <input type="radio" name="sd">
+                <label>
+                    Hematology & Oncology
+                </label>
+                <br>
+                <input type="radio" name="sd">
+                <label>
+                    Rheumatology
+                </label>
+                <br>
+                <input type="radio" name="sd">
+                <label>
+                    Endocrinology
+                </label>
+                <br>
+                <input type="radio"name="sd">
+                <label>
+                    Nephrology
+                </label>
+                <br>
+                <input type="radio" name="sd">
+                <label>
+                    Obstetrics & Gynecology (OB/GYN)
+                </label>
+                <br>
+                <input type="radio" name="sd">
+                <label>
+                    Pediatrics
+                </label>
+                <br>
+                <input type="radio" name="sd">
+                <label>
+                    General Surgery
+                </label>
+                
+                <br><br>
+            </div>
+            <div class="ad" id="departments">
+                <h3>Additional Departments</h3>
+                <input type="radio" name="ad">
+                <label>
+                    Mental Health
+                </label>
+                <br>
+                <input type="radio" name="ad">
+                <label>
+                    Physical Therapy & Rehabilitation
+                </label>
+                <br>
+                <input type="radio" name="ad">
+                <label>
+                    Pain Management
+                </label>
+                <br>
+                <input type="radio" name="ad">
+                <label>
+                    Critical Care/Intensive Care Unit (ICU)
+                </label>
+                <br>
+                <input type="radio" name="ad">
+                <label>
+                    Radiology
+                </label>
+                <br>
+                <input type="radio" name="ad">
+                <label>
+                    Pathology
+                </label>
+                <br>
+                <input type="radio" name="ad">
+                <label>
+                    Laboratory
+                </label>
+                <br>
+                <input type="radio" name="ad">
+                <label>
+                    Pharmacy
+                </label>
+                <br>
+            </div>
+            <div class="ncd" id="departments">
+                <input type="radio" name="ncd" id="">
+                <label>
+                    Admissions
+                </label>
+                <br>
+                
+                <input type="radio" name="ncd" id="">
+                <label>
+                    Medical Records
+                </label>
+                <br>
+                <input type="radio" name="ncd" id="">
+                <label>
+                    Billing & Insurance
+                </label>
+                <br>
+                <input type="radio" name="ncd" id="">
+                <label>
+                    Human Resources
+                </label>
+                <br>
+                <input type="radio" name="ncd" id="">
+                <label>
+                    Information Technology (IT)
+                </label>
+                <br>
+                <input type="radio" name="ncd" id="">
+                <label>
+                    Facilities Management
+                </label>
+                <br>
+
+                <input type="radio" name="ncd" id="">
+                <label>
+                    Security
+                </label>
+                <br>
+
+            </div>
+            <br>
+            <div class="doctors">
+                <h4>Select a Doctor:</h4>
+                <select name="doctors" id="doctors">
+                    <option>Select Doctor</option>
+                    <option>Dr. Anya Kapoor</option>
+                    <option>Dr. Ethan Wright</option>
+                    <option>Dr. Beatrice Flores</option>
+                    <option>Dr. Liam Campbell</option>
+                    <option>Dr. Maya Singh</option>
+                    <option>Dr. Owen Jones</option>
+                    <option>Dr. Evelyn Dubois</option>
+                    <option>Dr. Caleb Walker</option>
+                    <option>Dr. Sofia Martinez</option>
+                    <option>Dr. Lucas Miller</option>
+                    <option>Dr. Priya Sharma</option>
+                    <option>Dr. Benjamin Lee</option>
+                    <option>Dr. Nadia Patel</option>
+                    <option>Dr. Alexander Garcia</option>
+                    <option>Dr. Chloe Bennett</option>
+                    <option>Dr. Daniel Hernandez</option>
+                    <option>Dr. Isabelle Moore</option>
+                    <option>Dr. Noah Jackson</option>
+                    <option>Dr. Riley Thomas</option>
+                    <option>Dr. Ava Brown</option>
+                    <option>Dr. Elijah Nelson</option>
+                    <option>Dr. Zara Khan</option>
+                    <option>Dr. Gabriel Lewis</option>
+                    <option>Dr. Logan Clark</option>
+                    <option>Dr. Stella Young</option>
+                    <option>Dr. Mateo Allen</option>
+                    <option>Dr. Harper Davis</option>
+                    <option>Dr. Ryan Wilson</option>
+                    <option>Dr. Isla Garcia</option>
+                    <option>Dr. Julian Baker</option>
+                    <option>Dr. Nora Kim</option>
+                    <option>Dr. Elias Anderson</option>
+                    <option>Dr. Scarlett Moore</option>
+                    <option>Dr. Zachary Taylor</option>
+                    <option>Dr. Luna Chen</option>
+                    <option>Dr. Mateo Ramirez</option>
+                    <option>Dr. Audrey Johnson</option>
+                    <option>Dr. Caleb Edwards</option>
+                    <option>Dr. Valentina Lopez</option>
+                    <option>Dr. Cameron Williams</option>
+                    <option>Dr. Maya Walker</option>
+                </select>
+                <br><br>
+            </div>
+            <div class="Comment">
+                <h4>Comments:</h4>
+                <textarea name="txtarea" id="txtarea" rows="10" cols="70" placeholder=""></textarea>
+            </div>
+            <br><br>
+
+            <button type="submit" class="submit">
+                Submit
+            </button>
+            
+            
+
+        </form>
+    </div>
+</body>
+</html>
